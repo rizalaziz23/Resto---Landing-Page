@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="output.css" />
+        <title>Resto</title>
+    </head>
+    <body>
+        <header>
+            <nav class="nav__container fixed inset-x-0 top-0 z-50 mx-auto mt-[60px] h-full max-h-14 max-w-[1440px] px-[60px] transition-all duration-300">
+                <div class="nav__wrapper flex h-full max-h-14 items-center justify-between gap-4 transition-all duration-300">
+                    <ul class="flex h-full w-full max-w-[378px] items-center gap-[30px]">
+                        <li class="relative font-medium before:absolute before:-bottom-1 before:left-0 before:h-[3px] before:w-full before:rounded-full before:bg-[#5A4FCF] before:transition-all before:duration-300"><a href="">Home</a></li>
+                        <li class="group relative h-full">
+                            <div class="flex h-full cursor-pointer items-center">
+                                <span class="font-medium">Category</span>
+                                <div class="h-6 w-6 shrink-0 overflow-hidden transition-all duration-300 group-hover:-rotate-180">
+                                    <img class="h-full w-full object-contain" src="assets/images/icons/path-down-black.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="pointer-events-none absolute left-1/2 top-14 z-40 w-[200px] -translate-x-1/2 overflow-hidden rounded-xl text-center group-hover:pointer-events-auto">
+                                <div class="relative w-full -translate-y-[400px] transition-all duration-300 group-hover:translate-y-0 [&>a]:transition-all [&>a]:duration-300">
+                                    <a class="block h-12 w-full border-b-2 bg-[#F2F2F2] leading-[48px] hover:contrast-75" href="">Category A1</a>
+                                    <a class="block h-12 w-full border-b-2 bg-[#F2F2F2] leading-[48px] hover:contrast-75" href="">Category A2</a>
+                                    <a class="block h-12 w-full border-b-2 bg-[#F2F2F2] leading-[48px] hover:contrast-75" href="">Category A3</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="relative font-medium before:absolute before:-bottom-1 before:left-0 before:h-[3px] before:w-0 before:rounded-full before:bg-[#5A4FCF] before:transition-all before:duration-300 hover:before:w-full"><a href="">Services</a></li>
+                        <li class="relative font-medium before:absolute before:-bottom-1 before:left-0 before:h-[3px] before:w-0 before:rounded-full before:bg-[#5A4FCF] before:transition-all before:duration-300 hover:before:w-full"><a href="">About us</a></li>
+                    </ul>
+                    <a href="">
+                        <div class="h-[38px] w-[118px] shrink-0 overflow-hidden">
+                            <img class="h-full w-full object-contain" src="assets/images/logos/resto-logo.png" alt="" />
+                        </div>
+                    </a>
+                    <div class="flex max-w-[446px] items-center gap-5">
+                        <form class="relative flex w-full items-center rounded-xl transition-all duration-300 has-[:focus]:ring-2 has-[:focus]:ring-[#5A4FCF]">
+                            <button class="absolute left-0 top-1/2 -translate-y-1/2 py-4 pl-7" type="submit">
+                                <div class="flex h-6 w-6 shrink-0 overflow-hidden">
+                                    <img class="h-full w-full object-contain" src="assets/images/icons/search-black.svg" alt="" />
+                                </div>
+                            </button>
+                            <input class="min-w-[322px] rounded-xl bg-white py-4 pl-[62px] pr-7 placeholder:font-medium focus:outline-none" type="text" placeholder="Search your favorite food" />
+                        </form>
+                        <a href="">
+                            <div class="relative rounded-xl bg-[#5A4FCF]/10 px-7 py-4 font-semibold text-[#5A4FCF] transition-all duration-300 hover:ring-2 hover:ring-[#5A4FCF]">Login</div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="mb-[120px] mt-[176px] overflow-x-hidden">
+            <section id="recent-resto" class="mx-auto max-h-[564px] max-w-[1440px]">
+                <div class="relative mx-[60px]">
+                    <div class="absolute left-0 top-1/2 z-10 flex h-[297px] w-[390px] -translate-y-1/2 flex-col justify-between gap-4 rounded-3xl bg-white px-6 py-6">
+                        <div class="flex flex-col gap-1">
+                            <div class="flex items-center">
+                                <div class="flex items-center">
+                                    <div class="h-6 w-6 shrink-0 overflow-hidden"><img src="assets/images/icons/star-yellow-fill.svg" alt="" /></div>
+                                    <div class="h-6 w-6 shrink-0 overflow-hidden"><img src="assets/images/icons/star-yellow-fill.svg" alt="" /></div>
+                                    <div class="h-6 w-6 shrink-0 overflow-hidden"><img src="assets/images/icons/star-yellow-fill.svg" alt="" /></div>
+                                    <div class="h-6 w-6 shrink-0 overflow-hidden"><img src="assets/images/icons/star-yellow-fill.svg" alt="" /></div>
+                                    <div class="h-6 w-6 shrink-0 overflow-hidden"><img src="assets/images/icons/star-yellow-fill.svg" alt="" /></div>
+                                </div>
+                                <div class="flex items-center gap-1 leading-none">
+                                    <span class="text-lg font-semibold text-[#FFB800]">5.0</span>
+                                    <span class="text-[#656565]">(5.2K+)</span>
+                                </div>
+                            </div>
+                            <h3 class="text-[22px] font-semibold text-resto-black">Padang Restaurant</h3>
+                            <p class="text-lg font-semibold text-[#656565]">IDR 49.999 - IDR 560.000</p>
+                            <div class="flex items-center gap-[6px]">
+                                <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                    <img class="h-full w-full object-contain" src="assets/images/icons/location-fill-gray.svg" alt="" />
+                                </div>
+                                <span class="text-[#656565]">Padang, Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <a href="" class="w-fit">
+                                <div class="flex max-w-[226px] items-center rounded-xl bg-resto-bright-yellow px-7 py-4">
+                                    <span class="font-semibold text-resto-black">Make Reservation</span>
+                                    <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                        <img class="h-full w-full object-contain" src="assets/images/icons/path-right-black.svg" alt="" />
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="flex items-center gap-[6px]">
+                                <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                    <img class="h-full w-full object-contain" src="assets/images/icons/info-square-gray.svg" alt="" />
+                                </div>
+                                <span class="text-[#656565]">No extra cost</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-resto relative pl-[80px]">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide !w-fit">
+                                <div class="h-[564px] w-[1128px] shrink-0 overflow-hidden rounded-3xl">
+                                    <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-1.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide !w-fit">
+                                <div class="h-[564px] w-[1128px] shrink-0 overflow-hidden rounded-3xl">
+                                    <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-2.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide !w-fit">
+                                <div class="h-[564px] w-[1128px] shrink-0 overflow-hidden rounded-3xl">
+                                    <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-1.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide !w-fit">
+                                <div class="h-[564px] w-[1128px] shrink-0 overflow-hidden rounded-3xl">
+                                    <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-2.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide !w-fit">
+                                <div class="h-[564px] w-[1128px] shrink-0 overflow-hidden rounded-3xl">
+                                    <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-1.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="benefits" class="mx-auto mt-[120px] w-full max-w-[1440px]">
+                <div class="mx-[60px] flex flex-col items-center justify-center gap-[41px]">
+                    <div class="flex flex-col items-center gap-[6px]">
+                        <p class="font-semibold uppercase text-[#5A4FCF]">Special Benefit For You</p>
+                        <h2 class="text-[28px] font-semibold text-resto-black">Why Should Choose Us?</h2>
+                    </div>
+                    <div class="flex h-screen max-h-[347px] justify-evenly gap-5">
+                        <a href="">
+                            <div class="group flex h-full max-w-[315px] flex-col justify-between overflow-hidden rounded-3xl bg-white">
+                                <div class="flex flex-col items-center px-6 pt-6">
+                                    <div class="shrink-0 overflow-hidden rounded-full bg-resto-bright-yellow/15 p-4">
+                                        <img class="h-full w-full object-contain" src="assets/images/icons/decor/discount.svg" alt="" />
+                                    </div>
+                                    <h3 class="mt-6 text-lg font-semibold text-resto-black">Extra Discounts</h3>
+                                    <p class="mt-3 text-center text-[#656565]">Get your special discount by using our reservation</p>
+                                </div>
+                                <div class="relative flex items-center justify-center p-6 before:absolute before:-bottom-20 before:h-full before:w-full before:bg-resto-bright-yellow before:transition-all before:duration-300 before:content-[''] before:group-hover:bottom-0">
+                                    <span class="relative font-semibold text-resto-black">View Details</span>
+                                    <div class="relative h-6 w-6 shrink-0 overflow-hidden">
+                                        <img class="h-full w-full object-contain" src="assets/images/icons/path-right-black.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="group flex h-full max-w-[315px] flex-col justify-between overflow-hidden rounded-3xl bg-white">
+                                <div class="flex flex-col items-center px-6 pt-6">
+                                    <div class="shrink-0 overflow-hidden rounded-full bg-resto-bright-yellow/15 p-4">
+                                        <img class="h-full w-full object-contain" src="assets/images/icons/decor/fork-knife.svg" alt="" />
+                                    </div>
+                                    <h3 class="mt-6 text-lg font-semibold text-resto-black">Come and Eat</h3>
+                                    <p class="mt-3 text-center text-[#656565]">Get your own table quickly & without waiting in line</p>
+                                </div>
+                                <div class="relative flex items-center justify-center p-6 before:absolute before:-bottom-20 before:h-full before:w-full before:bg-resto-bright-yellow before:transition-all before:duration-300 before:content-[''] before:group-hover:bottom-0">
+                                    <span class="relative font-semibold text-resto-black">View Details</span>
+                                    <div class="relative h-6 w-6 shrink-0 overflow-hidden">
+                                        <img class="h-full w-full object-contain" src="assets/images/icons/path-right-black.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="group flex h-full max-w-[315px] flex-col justify-between overflow-hidden rounded-3xl bg-white">
+                                <div class="flex flex-col items-center px-6 pt-6">
+                                    <div class="shrink-0 overflow-hidden rounded-full bg-resto-bright-yellow/15 p-4">
+                                        <img class="h-full w-full object-contain" src="assets/images/icons/decor/money-bag.svg" alt="" />
+                                    </div>
+                                    <h3 class="mt-6 text-lg font-semibold text-resto-black">No Extra Fee</h3>
+                                    <p class="mt-3 text-center text-[#656565]">Get tax free if you want to order food and make a reservation</p>
+                                </div>
+                                <div class="relative flex items-center justify-center p-6 before:absolute before:-bottom-20 before:h-full before:w-full before:bg-resto-bright-yellow before:transition-all before:duration-300 before:content-[''] before:group-hover:bottom-0">
+                                    <span class="relative font-semibold text-resto-black">View Details</span>
+                                    <div class="relative h-6 w-6 shrink-0 overflow-hidden">
+                                        <img class="h-full w-full object-contain" src="assets/images/icons/path-right-black.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="group flex h-full max-w-[315px] flex-col justify-between overflow-hidden rounded-3xl bg-white">
+                                <div class="flex flex-col items-center px-6 pt-6">
+                                    <div class="shrink-0 overflow-hidden rounded-full bg-resto-bright-yellow/15 p-4">
+                                        <img class="h-full w-full object-contain" src="assets/images/icons/decor/charm.svg" alt="" />
+                                    </div>
+                                    <h3 class="mt-6 text-lg font-semibold text-resto-black">Guaranteed Cleanliness</h3>
+                                    <p class="mt-3 text-center text-[#656565]">We ensure the cleanliness of the place as well as the food</p>
+                                </div>
+                                <div class="relative flex items-center justify-center p-6 before:absolute before:-bottom-20 before:h-full before:w-full before:bg-resto-bright-yellow before:transition-all before:duration-300 before:content-[''] before:group-hover:bottom-0">
+                                    <span class="relative font-semibold text-resto-black">View Details</span>
+                                    <div class="relative h-6 w-6 shrink-0 overflow-hidden">
+                                        <img class="h-full w-full object-contain" src="assets/images/icons/path-right-black.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="popular-resto" class="mx-auto mt-[120px] w-full max-w-[1440px]">
+                <div class="mx-[60px] flex items-center justify-between gap-10">
+                    <div class="flex h-screen max-h-[300px] max-w-[367px] flex-col justify-between gap-4">
+                        <div class="flex flex-col gap-[6px]">
+                            <p class="font-semibold uppercase text-[#5A4FCF]">Top 3 Featured Restaurant</p>
+                            <h2 class="text-[28px] font-semibold text-resto-black">Most Popular Restaurants</h2>
+                            <p class="text-[#656565]">The best restaurant in our opinion is how much customers like it in terms of place, price, comfort and of course the taste of the food itself.</p>
+                        </div>
+                        <a href="">
+                            <div class="flex max-w-[238px] items-center rounded-xl bg-resto-bright-yellow px-7 py-4">
+                                <p class="font-semibold text-resto-black">View All Restaurant</p>
+                                <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                    <img class="h-full w-full object-contain" src="assets/images/icons/path-right-black.svg" alt="" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="max-h-[475px]">
+                        <div class="flex gap-5">
+                            <a href="">
+                                <div class="group relative overflow-hidden">
+                                    <div class="h-[475px] w-[214px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
+                                        <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-3.png" alt="" />
+                                    </div>
+                                    <div class="absolute -bottom-36 left-1/2 flex h-[131px] w-full max-w-[352px] -translate-x-1/2 items-center justify-between gap-4 rounded-3xl bg-white p-6 transition-all duration-300 group-hover:bottom-6">
+                                        <div class="flex flex-col gap-1">
+                                            <div class="flex items-center gap-1 leading-none">
+                                                <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                                    <img class="h-full w-full object-contain" src="assets/images/icons/star-yellow-fill.svg" alt="" />
+                                                </div>
+                                                <span class="font-semibold text-[#FFB800]">5.0</span>
+                                                <span class="text-[#656565]">(7.6K+)</span>
+                                            </div>
+                                            <h3 class="text-lg font-semibold text-resto-black">Bind Balorant</h3>
+                                            <div class="flex items-center gap-[6px]">
+                                                <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                                    <img class="h-full w-full object-contain" src="assets/images/icons/location-fill-gray.svg" alt="" />
+                                                </div>
+                                                <span class="text-[#656565]">Jakarta, Indonesia</span>
+                                            </div>
+                                        </div>
+                                        <div class="h-9 w-9 rounded-xl bg-resto-bright-yellow p-[6px]">
+                                            <img class="h-full w-full object-contain" src="assets/images/icons/arrow-right-black.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="group relative overflow-hidden">
+                                    <div class="h-[475px] w-[214px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
+                                        <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-4.png" alt="" />
+                                    </div>
+                                    <div class="absolute -bottom-36 left-1/2 flex h-[131px] w-full max-w-[352px] -translate-x-1/2 items-center justify-between gap-4 rounded-3xl bg-white p-6 transition-all duration-300 group-hover:bottom-6">
+                                        <div class="flex flex-col gap-1">
+                                            <div class="flex items-center gap-1 leading-none">
+                                                <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                                    <img class="h-full w-full object-contain" src="assets/images/icons/star-yellow-fill.svg" alt="" />
+                                                </div>
+                                                <span class="font-semibold text-[#FFB800]">5.0</span>
+                                                <span class="text-[#656565]">(7.6K+)</span>
+                                            </div>
+                                            <h3 class="text-lg font-semibold text-resto-black">Bind Balorant</h3>
+                                            <div class="flex items-center gap-[6px]">
+                                                <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                                    <img class="h-full w-full object-contain" src="assets/images/icons/location-fill-gray.svg" alt="" />
+                                                </div>
+                                                <span class="text-[#656565]">Jakarta, Indonesia</span>
+                                            </div>
+                                        </div>
+                                        <div class="h-9 w-9 rounded-xl bg-resto-bright-yellow p-[6px]">
+                                            <img class="h-full w-full object-contain" src="assets/images/icons/arrow-right-black.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="group relative overflow-hidden">
+                                    <div class="h-[475px] w-[214px] shrink-0 overflow-hidden rounded-3xl transition-all duration-300 group-hover:w-[400px]">
+                                        <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-5.png" alt="" />
+                                    </div>
+                                    <div class="absolute -bottom-36 left-1/2 flex h-[131px] w-full max-w-[352px] -translate-x-1/2 items-center justify-between gap-4 rounded-3xl bg-white p-6 transition-all duration-300 group-hover:bottom-6">
+                                        <div class="flex flex-col gap-1">
+                                            <div class="flex items-center gap-1 leading-none">
+                                                <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                                    <img class="h-full w-full object-contain" src="assets/images/icons/star-yellow-fill.svg" alt="" />
+                                                </div>
+                                                <span class="font-semibold text-[#FFB800]">5.0</span>
+                                                <span class="text-[#656565]">(7.6K+)</span>
+                                            </div>
+                                            <h3 class="text-lg font-semibold text-resto-black">Bind Balorant</h3>
+                                            <div class="flex items-center gap-[6px]">
+                                                <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                                    <img class="h-full w-full object-contain" src="assets/images/icons/location-fill-gray.svg" alt="" />
+                                                </div>
+                                                <span class="text-[#656565]">Jakarta, Indonesia</span>
+                                            </div>
+                                        </div>
+                                        <div class="h-9 w-9 rounded-xl bg-resto-bright-yellow p-[6px]">
+                                            <img class="h-full w-full object-contain" src="assets/images/icons/arrow-right-black.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="nearby-resto" class="mx-auto mt-[120px] w-full max-w-[1440px]">
+                <div class="mx-[60px] flex flex-col items-center">
+                    <div class="flex w-full items-center justify-between gap-4">
+                        <div class="felx flex-col gap-[6px]">
+                            <span class="font-semibold uppercase text-[#5A4FCF]">Restaurant Based By City</span>
+                            <h2 class="text-[28px] font-semibold text-resto-black">Restaurant Near You</h2>
+                        </div>
+                        <div class="flex items-center gap-[6px] rounded-xl bg-[#F2F2F2] px-6 py-5">
+                            <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                <img class="h-full w-full object-contain" src="assets/images/icons/location-fill-gray.svg" alt="" />
+                            </div>
+                            <div class="flex items-center">
+                                <span class="font-medium text-[#656565]">Jakarta, Indonesia</span>
+                                <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                    <img class="h-full w-full object-contain" src="assets/images/icons/path-down-black.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-[34px] flex h-full w-full justify-between gap-5">
+                        <a href="">
+                            <div class="relative max-h-[415px]">
+                                <div class="h-[415px] w-[427px] shrink-0 overflow-hidden rounded-3xl">
+                                    <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-8.png" alt="" />
+                                </div>
+                                <div class="absolute bottom-[33px] left-1/2 w-full -translate-x-1/2 px-6">
+                                    <div class="flex h-[134px] w-full max-w-[379px] items-center justify-between gap-4 rounded-3xl bg-white p-6 transition-all duration-300">
+                                        <div class="flex flex-col gap-1">
+                                            <div class="flex items-center gap-1 leading-none">
+                                                <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                                    <img class="h-full w-full object-contain" src="assets/images/icons/star-yellow-fill.svg" alt="" />
+                                                </div>
+                                                <span class="font-semibold text-[#FFB800]">5.0</span>
+                                                <span class="text-[#656565]">(6.6K+)</span>
+                                            </div>
+                                            <h3 class="text-lg font-semibold text-resto-black">Batavia Restaurant</h3>
+                                            <p class="text-lg font-semibold text-[#656565]">IDR 29.000 - IDR 259.999</p>
+                                        </div>
+                                        <div class="h-9 w-9 shrink-0 overflow-hidden rounded-xl bg-resto-bright-yellow p-[6px]">
+                                            <img class="h-full w-full object-contain" src="assets/images/icons/arrow-right-black.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="relative max-h-[415px]">
+                                <div class="h-[415px] w-[427px] shrink-0 overflow-hidden rounded-3xl">
+                                    <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-6.png" alt="" />
+                                </div>
+                                <div class="absolute bottom-[33px] left-1/2 w-full -translate-x-1/2 px-6">
+                                    <div class="flex h-[134px] w-full max-w-[379px] items-center justify-between gap-4 rounded-3xl bg-white p-6 transition-all duration-300">
+                                        <div class="flex flex-col gap-1">
+                                            <div class="flex items-center gap-1 leading-none">
+                                                <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                                    <img class="h-full w-full object-contain" src="assets/images/icons/star-yellow-fill.svg" alt="" />
+                                                </div>
+                                                <span class="font-semibold text-[#FFB800]">5.0</span>
+                                                <span class="text-[#656565]">(3.6K+)</span>
+                                            </div>
+                                            <h3 class="text-lg font-semibold text-resto-black">Split Ascent Restaurant</h3>
+                                            <p class="text-lg font-semibold text-[#656565]">IDR 49.999 - IDR 560.000</p>
+                                        </div>
+                                        <div class="h-9 w-9 shrink-0 overflow-hidden rounded-xl bg-resto-bright-yellow p-[6px]">
+                                            <img class="h-full w-full object-contain" src="assets/images/icons/arrow-right-black.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="relative max-h-[415px]">
+                                <div class="h-[415px] w-[427px] shrink-0 overflow-hidden rounded-3xl">
+                                    <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-7.png" alt="" />
+                                </div>
+                                <div class="absolute bottom-[33px] left-1/2 w-full -translate-x-1/2 px-6">
+                                    <div class="flex h-[134px] w-full max-w-[379px] items-center justify-between gap-4 rounded-3xl bg-white p-6 transition-all duration-300">
+                                        <div class="flex flex-col gap-1">
+                                            <div class="flex items-center gap-1 leading-none">
+                                                <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                                    <img class="h-full w-full object-contain" src="assets/images/icons/star-yellow-fill.svg" alt="" />
+                                                </div>
+                                                <span class="font-semibold text-[#FFB800]">5.0</span>
+                                                <span class="text-[#656565]">(11K+)</span>
+                                            </div>
+                                            <h3 class="text-lg font-semibold text-resto-black">Daza Fracture Restaurant</h3>
+                                            <p class="text-lg font-semibold text-[#656565]">IDR 29.999 - IDR 560.000</p>
+                                        </div>
+                                        <div class="h-9 w-9 shrink-0 overflow-hidden rounded-xl bg-resto-bright-yellow p-[6px]">
+                                            <img class="h-full w-full object-contain" src="assets/images/icons/arrow-right-black.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mt-14">
+                        <a href="">
+                            <div class="flex w-fit items-center rounded-xl bg-resto-bright-yellow px-7 py-4">
+                                <span class="font-semibold text-resto-black">View All Restaurant</span>
+                                <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                    <img class="h-full w-full object-contain" src="assets/images/icons/path-right-black.svg" alt="" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="expert-chef" class="mx-auto mt-[120px] w-full max-w-[1440px]">
+                <div class="mx-[60px] flex justify-center gap-16">
+                    <div class="flex w-full justify-center">
+                        <div class="relative flex max-h-[848px] w-full max-w-[660px] justify-center">
+                            <div class="absolute right-0 top-10 flex flex-col items-center gap-3 rounded-3xl bg-white px-[46px] py-[30px]">
+                                <div class="h-20 w-20 shrink-0 overflow-hidden rounded-full bg-[#FFF7ED] p-[15px]">
+                                    <img src="assets/images/icons/decor/shield.svg" alt="" />
+                                </div>
+                                <p class="max-w-[87px] text-balance text-center text-lg font-semibold leading-snug text-resto-black">
+                                    12 Years
+                                    <span class="text-base font-normal text-[#656565]">Experience</span>
+                                </p>
+                            </div>
+                            <a href="">
+                                <div class="absolute bottom-10 left-0 flex h-[180px] w-[330px] items-center gap-3 rounded-3xl bg-white p-6">
+                                    <div class="h-[132px] w-[96px] shrink-0 overflow-hidden rounded-xl">
+                                        <img class="h-full w-full object-cover" src="assets/images/thumbnails/thumbnail-4.png" alt="" />
+                                    </div>
+                                    <div class="flex flex-col gap-6">
+                                        <div class="flex flex-col">
+                                            <span class="text-[#656565]">Chef at restaurant:</span>
+                                            <h3 class="text-lg font-semibold text-resto-black">Pearl Dolphin</h3>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <span class="font-semibold text-resto-bright-yellow">View Details</span>
+                                            <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                                <img class="h-full w-full object-contain" src="assets/images/icons/path-right-bright-yellow.svg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="h-[848px] w-[560px] shrink-0 overflow-hidden rounded-3xl">
+                                <img class="h-full w-full object-cover" src="assets/images/photos/figure-1.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex w-full flex-col">
+                        <div class="flex flex-col gap-[6px]">
+                            <span class="text-lg font-semibold text-[#5A4FCF]">Top 4 Expert Chefs</span>
+                            <h2 class="text-[32px] font-semibold text-resto-black">Expert Chefs in Fuddy</h2>
+                        </div>
+                        <div class="mt-8 flex w-full flex-col gap-5">
+                            <a href="">
+                                <div class="group flex w-full items-center justify-between overflow-hidden rounded-3xl p-6 transition-all duration-300 hover:bg-white">
+                                    <div class="flex flex-col gap-[6px]">
+                                        <p class="font-medium uppercase text-[#656565]">Pizza</p>
+                                        <h3 class="text-[22px] font-semibold text-resto-black">Phoenix Satcheup</h3>
+                                        <div class="flex items-center gap-[6px]">
+                                            <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                                <!-- <img class="h-full w-full object-contain" src="assets/images/icons/location-fill-gray.svg" alt="" /> -->
+                                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        class="fill-[#656565] transition-all duration-300 group-hover:fill-black"
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M3.5 10.3178C3.5 5.71789 7.34388 2 11.9934 2C16.6561 2 20.5 5.71789 20.5 10.3178C20.5 12.6357 19.657 14.7876 18.2695 16.6116C16.7388 18.6235 14.8522 20.3765 12.7285 21.7524C12.2425 22.0704 11.8039 22.0944 11.2704 21.7524C9.13474 20.3765 7.24809 18.6235 5.7305 16.6116C4.34198 14.7876 3.5 12.6357 3.5 10.3178ZM9.19423 10.5768C9.19423 12.1177 10.4517 13.3297 11.9934 13.3297C13.5362 13.3297 14.8058 12.1177 14.8058 10.5768C14.8058 9.0478 13.5362 7.77683 11.9934 7.77683C10.4517 7.77683 9.19423 9.0478 9.19423 10.5768Z"
+                                                        fill="currentColor"
+                                                    />
+                                                </svg>
+                                            </div>
+                                            <span class="text-[#656565]">Jakarta, Indonesia</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex translate-x-52 items-center transition-all duration-300 group-hover:translate-x-0">
+                                        <span class="font-medium text-resto-bright-yellow">Profile Details</span>
+                                        <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                            <img class="h-full w-full object-contain" src="assets/images/icons/path-right-bright-yellow.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="group flex w-full items-center justify-between overflow-hidden rounded-3xl p-6 transition-all duration-300 hover:bg-white">
+                                    <div class="flex flex-col gap-[6px]">
+                                        <p class="font-medium uppercase text-[#656565]">Vegan</p>
+                                        <h3 class="text-[22px] font-semibold text-resto-black">Chamber Botfrag</h3>
+                                        <div class="flex items-center gap-[6px]">
+                                            <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                                <!-- <img class="h-full w-full object-contain" src="assets/images/icons/location-fill-gray.svg" alt="" /> -->
+                                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        class="fill-[#656565] transition-all duration-300 group-hover:fill-black"
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M3.5 10.3178C3.5 5.71789 7.34388 2 11.9934 2C16.6561 2 20.5 5.71789 20.5 10.3178C20.5 12.6357 19.657 14.7876 18.2695 16.6116C16.7388 18.6235 14.8522 20.3765 12.7285 21.7524C12.2425 22.0704 11.8039 22.0944 11.2704 21.7524C9.13474 20.3765 7.24809 18.6235 5.7305 16.6116C4.34198 14.7876 3.5 12.6357 3.5 10.3178ZM9.19423 10.5768C9.19423 12.1177 10.4517 13.3297 11.9934 13.3297C13.5362 13.3297 14.8058 12.1177 14.8058 10.5768C14.8058 9.0478 13.5362 7.77683 11.9934 7.77683C10.4517 7.77683 9.19423 9.0478 9.19423 10.5768Z"
+                                                        fill="currentColor"
+                                                    />
+                                                </svg>
+                                            </div>
+                                            <span class="text-[#656565]">Bandung, Indonesia</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex translate-x-52 items-center transition-all duration-300 group-hover:translate-x-0">
+                                        <span class="font-medium text-resto-bright-yellow">Profile Details</span>
+                                        <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                            <img class="h-full w-full object-contain" src="assets/images/icons/path-right-bright-yellow.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="group flex w-full items-center justify-between overflow-hidden rounded-3xl p-6 transition-all duration-300 hover:bg-white">
+                                    <div class="flex flex-col gap-[6px]">
+                                        <p class="font-medium uppercase text-[#656565]">Roast Chicken</p>
+                                        <h3 class="text-[22px] font-semibold text-resto-black">Asep Vandal</h3>
+                                        <div class="flex items-center gap-[6px]">
+                                            <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                                <!-- <img class="h-full w-full object-contain" src="assets/images/icons/location-fill-gray.svg" alt="" /> -->
+                                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        class="fill-[#656565] transition-all duration-300 group-hover:fill-black"
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M3.5 10.3178C3.5 5.71789 7.34388 2 11.9934 2C16.6561 2 20.5 5.71789 20.5 10.3178C20.5 12.6357 19.657 14.7876 18.2695 16.6116C16.7388 18.6235 14.8522 20.3765 12.7285 21.7524C12.2425 22.0704 11.8039 22.0944 11.2704 21.7524C9.13474 20.3765 7.24809 18.6235 5.7305 16.6116C4.34198 14.7876 3.5 12.6357 3.5 10.3178ZM9.19423 10.5768C9.19423 12.1177 10.4517 13.3297 11.9934 13.3297C13.5362 13.3297 14.8058 12.1177 14.8058 10.5768C14.8058 9.0478 13.5362 7.77683 11.9934 7.77683C10.4517 7.77683 9.19423 9.0478 9.19423 10.5768Z"
+                                                        fill="currentColor"
+                                                    />
+                                                </svg>
+                                            </div>
+                                            <span class="text-[#656565]">Sunda, Indonesia</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex translate-x-52 items-center transition-all duration-300 group-hover:translate-x-0">
+                                        <span class="font-medium text-resto-bright-yellow">Profile Details</span>
+                                        <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                            <img class="h-full w-full object-contain" src="assets/images/icons/path-right-bright-yellow.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="group flex w-full items-center justify-between overflow-hidden rounded-3xl p-6 transition-all duration-300 hover:bg-white">
+                                    <div class="flex flex-col gap-[6px]">
+                                        <p class="font-medium uppercase text-[#656565]">Beef Steak</p>
+                                        <h3 class="text-[22px] font-semibold text-resto-black">I Made Invoker</h3>
+                                        <div class="flex items-center gap-[6px]">
+                                            <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                                <!-- <img class="h-full w-full object-contain" src="assets/images/icons/location-fill-gray.svg" alt="" /> -->
+                                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        class="fill-[#656565] transition-all duration-300 group-hover:fill-black"
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M3.5 10.3178C3.5 5.71789 7.34388 2 11.9934 2C16.6561 2 20.5 5.71789 20.5 10.3178C20.5 12.6357 19.657 14.7876 18.2695 16.6116C16.7388 18.6235 14.8522 20.3765 12.7285 21.7524C12.2425 22.0704 11.8039 22.0944 11.2704 21.7524C9.13474 20.3765 7.24809 18.6235 5.7305 16.6116C4.34198 14.7876 3.5 12.6357 3.5 10.3178ZM9.19423 10.5768C9.19423 12.1177 10.4517 13.3297 11.9934 13.3297C13.5362 13.3297 14.8058 12.1177 14.8058 10.5768C14.8058 9.0478 13.5362 7.77683 11.9934 7.77683C10.4517 7.77683 9.19423 9.0478 9.19423 10.5768Z"
+                                                        fill="currentColor"
+                                                    />
+                                                </svg>
+                                            </div>
+                                            <span class="text-[#656565]">Bali, Indonesia</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex translate-x-52 items-center transition-all duration-300 group-hover:translate-x-0">
+                                        <span class="font-medium text-resto-bright-yellow">Profile Details</span>
+                                        <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                            <img class="h-full w-full object-contain" src="assets/images/icons/path-right-bright-yellow.svg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <a href="">
+                            <div class="mt-[62px] flex w-fit items-center rounded-xl bg-resto-bright-yellow px-7 py-4">
+                                <span class="font-semibold text-resto-black">View All Chef</span>
+                                <div class="h-6 w-6 shrink-0 overflow-hidden">
+                                    <img class="h-full w-full object-contain" src="assets/images/icons/path-right-black.svg" alt="" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script type="module" src="js/index.js"></script>
+    </body>
+</html>
